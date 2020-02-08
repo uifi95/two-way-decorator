@@ -1,10 +1,9 @@
 {
   "name": "two-way-decorator",
-  "version": "0.0.1",
   "description": "Angular Two Way data-binding decorator",
+  "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/core": "^8.2.14"
   },
   "author": "Sergiu Uifalean",
   "repository": {
