@@ -29,5 +29,6 @@ Then just use the binding like this in the parent template
   <app-example [(text)]="anyText" [(count)]="anyCount"></app-example>
 ```
 
-Made with pure Typescript and @angular/core.
+Made with pure TypeScript and **@angular/core**.
+
 Author: Sergiu Uifalean
