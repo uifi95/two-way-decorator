@@ -8,17 +8,26 @@ import { Component, OnInit } from '@angular/core';
 import { TwoWay } from 'two-way-decorator';
 
 @Component({
-  selector: 'app-child-two-way',
-  templateUrl: './child-two-way.component.html',
-  styleUrls: ['./child-two-way.component.scss']
+  selector: 'app-example',
+  templateUrl: './example.component.html',
+  styleUrls: ['./example.component.scss']
 })
-export class ChildTwoWayComponent {
+export class ExampleComponent {
 
   @TwoWay()
   public text: string;
 
   @TwoWay()
-  public secondText: string;
+  public count: number;
 
 }
 ```
+
+Then just use the binding like this in the parent template
+
+```html
+  <app-example [(text)]="anyText" [(count)]="anyCount"></app-example>
+```
+
+Made with pure Typescript and @angular/core.
+Author: Sergiu Uifalean
